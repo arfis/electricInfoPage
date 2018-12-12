@@ -13,6 +13,11 @@
   width: 100%;
   justify-content: flex-end;
   margin-right: 20px;
+
+  @media screen and (max-width: 520px) {
+    display: block;
+    height: 100%;
+  }
 }
 
 .underline {
@@ -70,11 +75,17 @@
   background: rgba(217, 217, 217, 0.31);
   border-bottom: 1px solid rgba(217, 217, 217, 0.50);
   transition: all .2s;
-  height: 110px;
   width: 100%;
+
+  @media screen and (max-width: 520px) {
+    height: 100%;
+  }
 
   &.scrolled {
     height: 55px;
+    @media screen and (max-width: 520px) {
+      height: 100%;
+    }
     background: rgba(101, 101, 101, 0.77);
   }
 
