@@ -1,0 +1,138 @@
+:host {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.items-container {
+  color: white;
+  height: 100%;
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.underline {
+  height: 1px;
+  width: 100%;
+}
+
+.content {
+  position:relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.link {
+  padding: 2px 5px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .4s;
+  outline: none;
+
+  &:hover {
+    color: black;
+
+    .underline {
+      border-bottom: 2px solid black;
+    }
+   }
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.underline {
+  height: 2px;
+  width: 100%;
+  border-bottom: 2px solid black;
+  position: absolute;
+  bottom: 0;
+  transition: all .5s;
+}
+
+.header-wrapper {
+  display: flex;
+  height: 110px;
+  align-items: center;
+  background: rgba(217, 217, 217, 0.31);
+  border-bottom: 1px solid rgba(217, 217, 217, 0.50);
+  transition: all .2s;
+  height: 110px;
+  width: 100%;
+
+  &.scrolled {
+    height: 55px;
+    background: rgba(101, 101, 101, 0.77);
+  }
+
+  a {
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.actions {
+  padding: 0px 10px;
+  border-left: 1px solid rgba(217, 217, 217, 0.90);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language-selection {
+
+  .languages {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    position: absolute;
+    background: rgba(217, 217, 217, 0.6);
+  }
+
+  .img-wrapper {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 0px 10px;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+
+  img {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+
+  .company-name {
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+  }
+}

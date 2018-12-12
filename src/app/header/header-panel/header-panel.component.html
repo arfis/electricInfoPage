@@ -1,0 +1,37 @@
+<div [ngClass]="{'scrolled': isScrolled}" class="header-wrapper">
+
+  <a href="/">
+    <img *ngIf="img; else name" [src]="img">
+  </a>
+
+  <nav class="items-container">
+    <div class="link" *ngFor="let item of items"
+         [routerLink]="item.link"
+         (mouseover)="hoverItem(item)"
+         (mouseleave)="resetHoverItem()">
+      <div class="content">
+        <span>{{item.label | translate}}</span>
+        <div *ngIf="hasUnderline(item)" class="underline"></div>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="actions" (click)="openLanguages()">
+    <ng-container *ngIf="activeTranslation">
+      <img [src]="activeTranslation">
+    </ng-container>
+  </div>
+</div>
+
+<div *ngIf="languageSettingsVisible" class="language-selection">
+  <div class="languages">
+    <div class="img-wrapper" *ngFor="let language of allLanguages" (click)="setLanguage(language)" >
+    <img [src]="getLanguageImage(language)" >
+    </div>
+  </div>
+</div>
+
+<ng-template #name>
+  <span class="company-name">{{companyName}}</span>
+</ng-template>
