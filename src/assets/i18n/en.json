@@ -4,5 +4,8 @@
     "info": "Info",
     "about": "Contact",
     "products": "Products"
+  },
+  "page": {
+    "contactUs": "Contact us:"
   }
 }
