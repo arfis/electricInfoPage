@@ -16,6 +16,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import {NgbModule, NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 import { ParalaxComponent } from './paralax/paralax.component';
 import { HeaderPanelComponent } from './header/header-panel/header-panel.component';
+import { RefComponent } from './ref/ref.component';
+import { FooterComponent } from './footer/footer.component';
+import { RefsPageComponent } from './pages/refs-page/refs-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { HeaderPanelComponent } from './header/header-panel/header-panel.compone
     ProductPageComponent,
     CarouselComponent,
     ParalaxComponent,
-    HeaderPanelComponent
+    HeaderPanelComponent,
+    RefComponent,
+    FooterComponent,
+    RefsPageComponent
   ],
   imports: [
     CommonModule,

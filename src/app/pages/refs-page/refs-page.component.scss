@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: 20%;
+    padding: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

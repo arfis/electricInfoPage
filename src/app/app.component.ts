@@ -12,7 +12,7 @@ export class AppComponent {
 
   items = [
     {label: 'header.about', link: 'about'},
-    {label: 'header.products', link: 'products'},
+    {label: 'header.refs', link: 'refs'},
     {label: 'header.info', link: 'info'}
   ];
 
