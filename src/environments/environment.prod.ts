@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: 'http://handsomeio.com:8888'
+  url: 'https://handsomeio.com:8443'
 };
