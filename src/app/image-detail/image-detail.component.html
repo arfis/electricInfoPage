@@ -1,0 +1,12 @@
+<div class="image-fullscreen">
+  <span class="close-image" (click)="close()">X</span>
+  <div #imageDetail class="image-wrapper">
+    <span (click)="previous()" class="cursor"><</span>
+      <img #imageElement
+           [style.width]="calculatedImageWidth"
+           [style.height]="calculatedImageHeight"
+           [src]="image.file">
+    <span (click)="next()" class="cursor">></span>
+  </div>
+</div>
+

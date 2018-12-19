@@ -1,3 +1,4 @@
+
 <ngb-carousel *ngIf="images" [showNavigationArrows]="true" [showNavigationIndicators]="true">
   <ng-template ngbSlide *ngFor="let image of images">
     <img [src]="image" alt="Random slide">
@@ -7,3 +8,5 @@
     </div>
   </ng-template>
 </ngb-carousel>
+{{imageList | json}}
+<button (click)="getFileList()">Get</button>

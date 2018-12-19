@@ -19,6 +19,9 @@ import { HeaderPanelComponent } from './header/header-panel/header-panel.compone
 import { RefComponent } from './ref/ref.component';
 import { FooterComponent } from './footer/footer.component';
 import { RefsPageComponent } from './pages/refs-page/refs-page.component';
+import { ImageComponent } from './image/image.component';
+import { ImageListComponent } from './image-list/image-list.component';
+import { ImageDetailComponent } from './image-detail/image-detail.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { RefsPageComponent } from './pages/refs-page/refs-page.component';
     HeaderPanelComponent,
     RefComponent,
     FooterComponent,
-    RefsPageComponent
+    RefsPageComponent,
+    ImageComponent,
+    ImageListComponent,
+    ImageDetailComponent
   ],
   imports: [
     CommonModule,
@@ -47,7 +53,7 @@ import { RefsPageComponent } from './pages/refs-page/refs-page.component';
       }
     })
   ],
-  providers: [],
+  providers: []
 })
 export class AppModule {
 }
