@@ -55,7 +55,7 @@ export class ImageDetailComponent implements OnChanges, OnInit {
 
   ngOnInit() {
     fromEvent(this.element.nativeElement, 'click').subscribe((event) => {
-      if (!this.imageDetail.nativeElement.contains(event.target)) {
+      if (!this.imageDetail.nativeElement.contains((event as any).target)) {
         this.onCloseEmitter.next();
       }
     });
