@@ -1,10 +1,10 @@
 .image-wrapper {
   height: 200px;
-  background-color: green;
+  width: auto;
   position: relative;
-
-  animation: pulsate 2s ease-out;
-  animation-iteration-count: infinite;
+  overflow: hidden;
+  //animation: pulsate 2s ease-out;
+  //animation-iteration-count: infinite;
 }
 
 .img-magnifier-glass {
@@ -31,4 +31,5 @@
 
 img {
   height: 200px;
+  width: auto;
 }

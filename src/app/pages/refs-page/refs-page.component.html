@@ -1,8 +1,21 @@
 <div class="wrapper">
-  <h2>{{'header.refs' | translate}}</h2>
-  <div class="list">
-    <ms-ref class="item" *ngFor="let ref of refs" [ref]="ref"></ms-ref>
+  <!--<h2>{{'header.refs' | translate}}</h2>-->
+  <div class="content">
+    <h1>{{'list.cars' | translate}}</h1>
+    <div class="list">
+      <ms-ref class="item" *ngFor="let ref of carRefs" [ref]="ref"></ms-ref>
+    </div>
   </div>
 
-  <ms-image-list></ms-image-list>
+  <div class="content">
+    <h1>{{'list.other' | translate}}</h1>
+    <div class="list">
+      <ms-ref class="item" *ngFor="let ref of otherRefs" [ref]="ref"></ms-ref>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>{{'list.photos' | translate}}</h1>
+    <ms-image-list></ms-image-list>
+  </div>
 </div>

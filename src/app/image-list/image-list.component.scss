@@ -1,9 +1,16 @@
 .img-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   ms-image {
-    margin: 2px;
+    margin: 1px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
   }
 }
 

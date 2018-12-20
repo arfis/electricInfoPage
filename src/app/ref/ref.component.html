@@ -1,4 +1,10 @@
 <div class="ref">
-  <h4>{{name}}</h4>
-  <h5>{{city}}</h5>
+  <div class="image-wrapper">
+    <img *ngIf="logo; else text" [src]="logo">
+  </div>
+  <div class="city" *ngFor="let city of cities">{{city}}</div>
 </div>
+
+<ng-template #text>
+  <h5>{{name}}</h5>
+</ng-template>

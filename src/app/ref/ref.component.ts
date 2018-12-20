@@ -8,16 +8,18 @@ import { Component, Input, OnInit } from '@angular/core';
 export class RefComponent implements OnInit {
 
   @Input('ref') ref;
-  city;
+  cities;
+  logo;
   name;
 
   constructor() { }
 
   ngOnInit() {
-    const {name, city} = this.ref;
+    const {name, cities, logo} = this.ref;
 
     this.name = name;
-    this.city = city;
+    this.cities = cities;
+    this.logo = logo;
   }
 
 }

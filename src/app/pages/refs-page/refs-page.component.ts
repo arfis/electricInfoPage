@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Category } from '../../shared/model/category';
 
 @Component({
   selector: 'ms-refs-page',
@@ -7,70 +8,68 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RefsPageComponent implements OnInit {
 
-  refs = [
+  carRefs = [
     {
       name: 'Audi',
-      city: 'Győr - Ungarn'
+      cities: ['Győr - Ungarn', 'Neckarsulm - Deutschland'],
+      logo: 'assets/img/logo/audi.png',
+      category: Category.CAR
     },
     {
       name: 'Porsche',
-      city: 'Leipzig - Deutschland'
+      cities: ['Leipzig - Deutschland'],
+      logo: 'assets/img/logo/porsche.png',
+      category: Category.CAR
     },
     {
       name: 'BMW',
-      city: 'Leipzig - Deutschland'
+      cities: ['Leipzig - Deutschland'],
+      logo: 'assets/img/logo/bmw.png',
+      category: Category.CAR
     },
     {
       name: 'Volkswagen',
-      city: 'Września - Polen'
-    },
-    {
-      name: 'Audi',
-      city: 'Neckarsulm - Deutschland'
-    },
-    {
-      name: 'Volkswagen Slovakia',
-      city: 'Bratislava - Slowakei'
+      cities: ['Września - Polen', 'Bratislava - Slowakei'],
+      logo: 'assets/img/logo/volkswagen.png',
+      category: Category.CAR
     },
     {
       name: 'Mercedes Benz',
-      city: 'Rastatt - Deutschland'
-    },
-    {
-      name: 'Mercedes Benz',
-      city: 'Gaggenau - Deutschland'
-    },
-    {
-      name: 'Mercedes Benz',
-      city: 'Kuppenheim - Deutschland'
-    },
+      cities: ['Rastatt - Deutschland', 'Gaggenau - Deutschland', 'Kuppenheim - Deutschland', 'Wörth am Rhein - Deutschland'],
+      logo: 'assets/img/logo/mercedes.png',
+      category: Category.CAR
+    }];
+
+  otherRefs = [
     {
       name: 'APL Landau in der Pfalz',
-      city: 'Deutschland'
+      cities: ['Deutschland'],
+      category: Category.OTHER
     },
     {
       name: 'Kronospan SAS',
-      city: 'Auxerre - Frankreich'
+      cities: ['Auxerre - Frankreich'],
+      category: Category.OTHER
     },
     {
       name: 'Glatfelter',
-      city: 'Gernsbach - Deutschland'
-    },
-    {
-      name: 'Mercedes Benz',
-      city: 'Wörth am Rhein - Deutschland'
+      cities: ['Gernsbach - Deutschland'],
+      category: Category.OTHER
     },
     {
       name: 'S+S Büro Offenbach an der Queich',
-      city: 'Deutschland'
+      cities: ['Deutschland'],
+      category: Category.OTHER
     },
     {
       name: 'Hopi',
-      city: 'Senec - Slowakei'
+      cities: ['Senec - Slowakei'],
+      category: Category.OTHER
     }
   ];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

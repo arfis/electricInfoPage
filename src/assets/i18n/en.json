@@ -7,5 +7,10 @@
   },
   "page": {
     "contactUs": "Contact us:"
+  },
+  "list": {
+    "cars": "Car Industry",
+    "other": "Other",
+    "photos": "Photos"
   }
 }
