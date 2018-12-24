@@ -1,0 +1,22 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+
+  .item {
+    display: flex;
+    margin: 10px;
+
+    i {
+      padding-right: 5px;
+    }
+  }
+
+  .about {
+    height: 100vh;
+
+    .contact {
+      margin: auto;
+    }
+  }
+}

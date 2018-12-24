@@ -7,8 +7,11 @@ import { RefsPageComponent } from '../pages/refs-page/refs-page.component';
 const routes: Routes = [
   {path: 'about', component: AboutPageComponent},
   {path: 'refs', component: RefsPageComponent},
-  {path: 'info', component: InfoPageComponent},
-  {path: '', component: InfoPageComponent}
+  {path: 'services', component: InfoPageComponent},
+  {
+    path: '**',
+    redirectTo: 'services'
+  }
 ];
 
 @NgModule({

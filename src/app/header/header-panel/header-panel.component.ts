@@ -3,6 +3,8 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 import { fromEvent } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { LocationSectionService } from './location-section.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { distinctUntilChanged } from 'rxjs/operators';
 
 @Component({
   selector: 'ms-header-panel',
@@ -25,19 +27,25 @@ export class HeaderPanelComponent implements OnInit {
   allLanguages;
   languageSettingsVisible = false;
 
-  constructor(private location: Location,
+  currentUrl;
+
+  constructor(private router: Router,
+              private location: Location,
+              private route: ActivatedRoute,
               private locationService: LocationSectionService,
               private translateService: TranslateService) {
 
-    this.locationService.currentLocation.subscribe(result => {
-      if (result) {
-        const {location: link} = result;
-        if (link) {
-          this.location.go(link);
-          this.selectedItem = this.items.find(item => item.link === link);
+    this.router.events
+      .pipe(distinctUntilChanged())
+      .subscribe(
+      event => {
+        const {url} = (event as any);
+        if (url) {
+          const urlString = url.substring(1);
+          this.currentUrl = this.items.find(item => item.link === urlString) || this.items[0];
         }
       }
-    });
+    );
   }
 
   ngOnInit() {

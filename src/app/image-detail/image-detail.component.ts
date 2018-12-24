@@ -46,7 +46,7 @@ export class ImageDetailComponent implements OnChanges, OnInit {
     const {width, height} = image;
     if (width > height) {
       this.calculatedImageHeight = 'auto';
-      this.calculatedImageWidth = 100 + 'vh';
+      this.calculatedImageWidth = 65 + 'vw';
     } else {
       this.calculatedImageWidth = 'auto';
       this.calculatedImageHeight = 80 + 'vh';

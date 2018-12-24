@@ -1,3 +1,5 @@
+@import "../../../libs/colors";
+
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -11,5 +13,10 @@
 }
 
 .content {
-  margin: 40px 0px;
+
+  margin-bottom: 20px;
+
+  &:nth-child(2n) {
+    background: $color-light-blue;
+  }
 }

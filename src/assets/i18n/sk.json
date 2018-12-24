@@ -1,7 +1,7 @@
 {
   "title": "Vitajte u Elektrikarov!",
   "header": {
-    "info": "O nas",
+    "services": "Sluzby",
     "about": "Kontakt",
     "refs": "Referencie"
   },
@@ -12,5 +12,26 @@
     "cars": "Auto priemysel",
     "other": "Ine",
     "photos": "Fotky"
+  },
+  "services": {
+    "ourServices": "Služby",
+    "service1": "kompletné pripojenie káblov podľa projektovej dokumentácie",
+    "service2": "montáž káblových trás",
+    "service3": "kompletné pripojenie rozvodných skríň, riadiacich pultov...",
+    "electroInstalation" : {
+      "title": "Elektroinštalácia",
+      "item1": "elektroinštalačné práce pri domovej výstavbe",
+      "item2": "elektroinštalačné práce pri bytovej výstavbe",
+      "item3": "elektroinštalačné práce v halách",
+      "item4": "elektroinštalácie, silnoprúd, slaboprúd",
+      "item5": "prerábky a rekonštrukcie bytov a domov"
+    },
+    "automation" : {
+      "title": "Automatizácia",
+      "item1" : "výrobné linky",
+      "item2": "automatizačné zariadenia",
+      "item3": "dopravníky",
+      "item4": "konštrukcia a montáž strojov"
+    }
   }
 }

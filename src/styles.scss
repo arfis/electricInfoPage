@@ -11,6 +11,6 @@ body {
   font-family: 'montserat', 'arial', sans-serif;
 }
 
-.text-content {
-
+*::selection {
+  background: orange !important;
 }

@@ -6,6 +6,7 @@
 
   <nav class="items-container">
     <div class="link" *ngFor="let item of items"
+         [ngClass]="{'active' : currentUrl === item}"
          [routerLink]="item.link"
          (mouseover)="hoverItem(item)"
          (mouseleave)="resetHoverItem()">
