@@ -8,7 +8,7 @@ import { fromEvent } from 'rxjs';
   templateUrl: './image-list.component.html',
   styleUrls: ['./image-list.component.scss']
 })
-export class ImageListComponent implements OnInit {
+export class ImageListComponent {
 
   imageList;
   openedImage;
