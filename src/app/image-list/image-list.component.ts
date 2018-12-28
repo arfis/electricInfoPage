@@ -1,7 +1,5 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { environment } from '../../environments/environment';
+import { Component, ElementRef, HostListener } from '@angular/core';
 import { DataService } from '../shared/data/data.service';
-import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'ms-image-list',

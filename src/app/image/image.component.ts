@@ -6,16 +6,15 @@ import { ChangeDetectionStrategy, Component, Input, OnInit, ViewChild } from '@a
   styleUrls: ['./image.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ImageComponent implements OnInit {
+export class ImageComponent {
 
   @Input('imageUrl') url;
 
   @ViewChild('image') image;
   @ViewChild('glass') glass;
 
-  constructor() { }
-
-  ngOnInit() {
+  get test() {
+    console.log('test');
+    return 'test';
   }
-
 }
