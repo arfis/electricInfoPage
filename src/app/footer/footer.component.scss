@@ -1,3 +1,5 @@
+@import '../../libs/colors';
+
 .footer {
   background-color: black;
   color: white;
@@ -8,7 +10,7 @@
     margin: 10px;
 
     a {
-      color: orange;
+      color: $color-orange;
     }
     i {
       padding-right: 5px;

@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: 'services', component: InfoPageComponent},
   {
     path: '**',
-    redirectTo: 'services'
+    redirectTo: 'about'
   }
 ];
 

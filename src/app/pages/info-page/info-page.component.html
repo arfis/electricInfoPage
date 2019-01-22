@@ -1,34 +1,10 @@
 <div class="text-content">
   <div class="services">
-    <div class="content">
-      <h2>{{'services.ourServices' | translate}}</h2>
-      <ul>
-        <li>{{'services.service1' | translate}}</li>
-        <li>{{'services.service2' | translate}}</li>
-        <li>{{'services.service3' | translate}}</li>
-      </ul>
-    </div>
-
-    <div class="content">
-      <h2>{{'services.electroInstalation.title' | translate}}</h2>
-      <ul>
-        <li>{{'services.electroInstalation.item1' | translate}}</li>
-        <li>{{'services.electroInstalation.item2' | translate}}</li>
-        <li>{{'services.electroInstalation.item3' | translate}}</li>
-        <li>{{'services.electroInstalation.item4' | translate}}</li>
-        <li>{{'services.electroInstalation.item5' | translate}}</li>
-      </ul>
-    </div>
-
-    <div class="content">
-      <h2>{{'services.automation.title' | translate}}</h2>
-      <ul>
-        <li>{{'services.automation.item1' | translate}}</li>
-        <li>{{'services.automation.item2' | translate}}</li>
-        <li>{{'services.automation.item3' | translate}}</li>
-        <li>{{'services.automation.item4' | translate}}</li>
-        <li>{{'services.automation.item5' | translate}}</li>
-      </ul>
-    </div>
+    <ms-info-item class="info-item" *ngFor="let item of items" [item]="item"></ms-info-item>
   </div>
+
+  <p>
+    {{ 'services.notSure' | translate}}
+    <a [routerLink]="'/refs'">{{ 'header.refs' | translate}}</a>
+  </p>
 </div>

@@ -11,9 +11,9 @@ export class AppComponent {
   name = 'ACS elektrik s.r.o';
 
   items = [
+    {label: 'header.about', link: 'about'},
     {label: 'header.services', link: 'services'},
-    {label: 'header.refs', link: 'refs'},
-    {label: 'header.about', link: 'about'}
+    {label: 'header.refs', link: 'refs'}
   ];
 
   constructor(private translate: TranslateService) {

@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 10px;
 
   .item {
     padding: 20px;
@@ -14,9 +15,29 @@
 
 .content {
 
-  margin-bottom: 20px;
+  margin: 8% 0px;
+  //min-height: 100vh;
 
   &:nth-child(2n) {
     //background: $color-light-blue;
+  }
+
+  h3 {
+    text-decoration: underline;
+  }
+}
+
+ms-image-list {
+  display: block;
+  margin-top: 10%;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
   }
 }

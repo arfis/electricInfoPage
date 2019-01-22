@@ -2,8 +2,8 @@
   "title": "Vitajte na stránke spoločnosti ACS elektrik s.r.o.",
   "main": "Dovoľte ,aby sme Vám našu firmu predstavili. Naša firma vola založená v roku 2017 pracovníkmi ,ktorý majú viacročnú prax v obore. Firma sa zaoberá automatizáciou v priemysle, bytovými aj kancelárskymi inštaláciami doma aj v zahraničí.",
   "header": {
-    "services": "Sluzby",
-    "about": "Kontakt",
+    "services": "Služby",
+    "about": "O nás",
     "refs": "Referencie"
   },
   "page": {
@@ -11,10 +11,13 @@
   },
   "list": {
     "cars": "Auto priemysel",
-    "other": "Ine",
+    "other": "Iné Firmy",
     "photos": "Galéria"
   },
   "services": {
+    "clients": "Naši klienti",
+    "notSure": "Ak ste si neni istý našími službami, prezrite si naše referencie v sekcii",
+    "more": "Ponuku naších služieb nájdete v sekcii ",
     "ourServices": "Služby",
     "service1": "kompletné pripojenie káblov podľa projektovej dokumentácie",
     "service2": "montáž káblových trás",

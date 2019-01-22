@@ -2,7 +2,9 @@
   <div class="image-wrapper">
     <img *ngIf="logo; else text" [src]="logo">
   </div>
-  <div class="city" *ngFor="let city of cities">{{city}}</div>
+  <div class="cities">
+    <div class="city" *ngFor="let city of cities">{{city}}</div>
+  </div>
 </div>
 
 <ng-template #text>

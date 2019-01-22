@@ -1,12 +1,12 @@
-
 <ngb-carousel *ngIf="images" [showNavigationArrows]="true" [showNavigationIndicators]="true">
-  <ng-template ngbSlide *ngFor="let image of images">
-    <img [src]="image" alt="Random slide">
+  <ng-template ngbSlide *ngFor="let imageDetail of images">
+    <!--<div class="img-wrapper">-->
+      <!--<img class="img-fluid" [src]="imageDetail.image" alt="Random slide">-->
+    <!--</div>-->
+    <ms-paralax [backgroundImage]="imageDetail.image"></ms-paralax>
     <div class="carousel-caption">
-      <h3>No mouse navigation</h3>
-      <p>This carousel hides navigation arrows and indicators.</p>
+      <h3>{{imageDetail.title}}</h3>
+      <p>{{imageDetail.text}}</p>
     </div>
   </ng-template>
 </ngb-carousel>
-{{imageList | json}}
-<button (click)="getFileList()">Get</button>

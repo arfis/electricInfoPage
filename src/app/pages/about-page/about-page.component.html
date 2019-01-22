@@ -1,8 +1,12 @@
 <div class="content-wrapper">
-  <h1>
+  <h3>
     {{ 'title' | translate }}
-  </h1>
+  </h3>
   <p>
     {{ 'main' | translate }}
+  </p>
+  <p>
+    {{ 'services.more' | translate}}
+    <a [routerLink]="'/services'">{{ 'services.ourServices' | translate}}</a>
   </p>
 </div>

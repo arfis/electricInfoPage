@@ -14,19 +14,28 @@ export class CarouselComponent implements OnInit {
   showNavigationArrows = false;
   showNavigationIndicators = false;
   imageList = {};
-  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  images = [{
+    image: 'assets/img/worker.jpg',
+    title: 'Elektroinstalacia',
+    text: 'Bytova elektroinstalacia'
+  }, {
+    image: 'assets/img/intro.jpg',
+    title: 'Automatizacia',
+    text: 'Elektricka automatizacia vo firmach'
+  }];
 
   constructor(config: NgbCarouselConfig,
               private dataService: DataService) {
     // customize default values of carousels used by this component tree
     config.showNavigationArrows = true;
     config.showNavigationIndicators = true;
+    config.interval = 3000;
   }
 
   getFileList() {
     this.dataService.getPictureList().subscribe(
       ({files}) => {
-        this.images = files.map(data => environment.url + '/' + data.file);
+        // this.images = files.map(data => environment.url + '/' + data.file);
       }
     );
   }

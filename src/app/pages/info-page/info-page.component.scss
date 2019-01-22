@@ -15,10 +15,11 @@ h1 {
   }
 }
 
-.content {
-  padding: 10px 10%;
+.info-item {
+  display: block;
+  padding: 35px 2%;
   &::selection {
-    background: orange;
+    background: $color-orange;
   }
 
   &:nth-child(2n) {

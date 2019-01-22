@@ -1,8 +1,10 @@
+@import '../../../libs/colors';
+
 :host {
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 2;
+  z-index: 20;
 }
 
 .items-container {
@@ -39,7 +41,7 @@
 
 .active {
   .content {
-    color: orange !important;
+    color: white !important;
   }
   .underline {
     @media screen and (min-width: 520px) {
@@ -86,7 +88,8 @@
   display: flex;
   height: 110px;
   align-items: center;
-  background: rgba(217, 217, 217, 0.31);
+  background: $color-orange-transparent;
+
   border-bottom: 1px solid rgba(217, 217, 217, 0.50);
   transition: height .2s;
   width: 100%;
@@ -97,19 +100,13 @@
 
   &.scrolled {
     height: 55px;
-
-    .content {
-      color: white;
-    }
-
-    .company-name {
-      color: white;
-    }
+    color: $color-orange;
+    background: $color-orange;
 
     @media screen and (max-width: 520px) {
       height: 110px;
     }
-    background: black;
+    //background: black;
 
     .actions {
       img {

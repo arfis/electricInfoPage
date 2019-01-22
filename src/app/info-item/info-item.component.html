@@ -1,0 +1,11 @@
+<div class="content">
+  <img [src]="item.icon">
+  <div class="text-wrapper">
+    <div class="title">
+      <h2>{{item.title | translate}}</h2>
+    </div>
+    <ul class="points">
+      <li *ngFor="let item of item.items">{{item | translate}}</li>
+    </ul>
+  </div>
+</div>
