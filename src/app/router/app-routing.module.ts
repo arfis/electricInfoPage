@@ -5,9 +5,18 @@ import { AboutPageComponent } from '../pages/about-page/about-page.component';
 import { RefsPageComponent } from '../pages/refs-page/refs-page.component';
 
 const routes: Routes = [
-  {path: 'about', component: AboutPageComponent},
-  {path: 'refs', component: RefsPageComponent},
-  {path: 'services', component: InfoPageComponent},
+  {
+    path: 'about',
+    component: AboutPageComponent
+  },
+  {
+    path: 'refs',
+    loadChildren: '../reference/reference.module#ReferenceModule'
+  },
+  {
+    path: 'services',
+    component: InfoPageComponent
+  },
   {
     path: '**',
     redirectTo: 'about'
