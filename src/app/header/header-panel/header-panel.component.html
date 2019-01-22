@@ -28,7 +28,7 @@
 <div *ngIf="languageSettingsVisible" class="language-selection">
   <div class="languages">
     <div class="img-wrapper" *ngFor="let language of allLanguages" (click)="setLanguage(language)" >
-    <img [src]="getLanguageImage(language)" >
+      <img [src]="getLanguageImage(language)" >
     </div>
   </div>
 </div>

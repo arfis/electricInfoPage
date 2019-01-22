@@ -49,13 +49,13 @@ export class HeaderPanelComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.activeTranslation = `assets/img/flags/${this.translateService.currentLang}.png`;
+    this.activeTranslation = `assets/img/flags/${this.translateService.currentLang}.svg`;
     this.allLanguages = this.translateService.langs;
 
     this.translateService.onLangChange.subscribe(
       () => {
         const activeLang = this.translateService.currentLang;
-        this.activeTranslation = `assets/img/flags/${activeLang}.png`;
+        this.activeTranslation = `assets/img/flags/${activeLang}.svg`;
       }
     );
 
@@ -96,7 +96,7 @@ export class HeaderPanelComponent implements OnInit {
   }
 
   getLanguageImage(language) {
-    return `assets/img/flags/${language}.png`;
+    return `assets/img/flags/${language}.svg`;
   }
 
   private locationChange(location) {

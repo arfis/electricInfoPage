@@ -1,0 +1,17 @@
+{
+  "title": "Dear guests, welcome to the website of ACS Elektrik s.r.o.",
+  "main": "Let us introduce you to our company. ACS Elektrik s.r.o. was established in 2017 by specialists who have many years of experience in their field. Our company deals with industrial automatization and also with residential and office installations in Slovakia as well as abroad.",
+  "header": {
+    "services": "Services",
+    "about": "Contact",
+    "refs": "References"
+  },
+  "page": {
+    "contactUs": "Contact us:"
+  },
+  "list": {
+    "cars": "Car Industry",
+    "other": "Other",
+    "photos": "Gallery"
+  }
+}
