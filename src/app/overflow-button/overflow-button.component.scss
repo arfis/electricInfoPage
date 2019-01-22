@@ -1,0 +1,32 @@
+@import '../../libs/colors';
+
+.button-text {
+  opacity: .4;
+  padding: 15px 10px;
+  background-color: $color-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  img {
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+  }
+}
+
+.heart-beat {
+  animation: beat .65s infinite alternate;
+  transform-origin: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+  to { transform: scale(1.20); }
+}

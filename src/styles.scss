@@ -5,6 +5,10 @@
   src: url(assets/font/Montserrat-Regular.otf) format("opentype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }

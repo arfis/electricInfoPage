@@ -23,6 +23,7 @@ import { ImageComponent } from './image/image.component';
 import { ImageListComponent } from './image-list/image-list.component';
 import { ImageDetailComponent } from './image-detail/image-detail.component';
 import { InfoItemComponent } from './info-item/info-item.component';
+import { OverflowButtonComponent } from './overflow-button/overflow-button.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { InfoItemComponent } from './info-item/info-item.component';
     ImageComponent,
     ImageListComponent,
     ImageDetailComponent,
-    InfoItemComponent
+    InfoItemComponent,
+    OverflowButtonComponent
   ],
   imports: [
     CommonModule,

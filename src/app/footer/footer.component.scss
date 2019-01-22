@@ -4,6 +4,9 @@
   background-color: black;
   color: white;
   padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 
   .item {
     display: flex;
