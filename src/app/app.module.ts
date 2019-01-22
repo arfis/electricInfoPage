@@ -17,6 +17,7 @@ import { HttpLoaderFactory, SharedModule } from './shared/shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { GenericPageComponent } from './pages/generic-page/generic-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgtUniversalModule } from '@ng-toolkit/universal';
     HeaderPanelComponent,
     FooterComponent,
     InfoItemComponent,
-    OverflowButtonComponent
+    OverflowButtonComponent,
+    GenericPageComponent
   ],
   imports: [
     CommonModule,

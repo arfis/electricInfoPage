@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../../shared/model/category';
+import { GenericPageComponent } from '../generic-page/generic-page.component';
 
 @Component({
   selector: 'ms-refs-page',
   templateUrl: './refs-page.component.html',
   styleUrls: ['./refs-page.component.scss']
 })
-export class RefsPageComponent implements OnInit {
+export class RefsPageComponent extends GenericPageComponent {
 
   carRefs = [
     {
@@ -67,11 +68,5 @@ export class RefsPageComponent implements OnInit {
       category: Category.OTHER
     }
   ];
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
 
 }

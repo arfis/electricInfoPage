@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { GenericPageComponent } from '../generic-page/generic-page.component';
 
 @Component({
   selector: 'ms-info-page',
   templateUrl: './info-page.component.html',
   styleUrls: ['./info-page.component.scss']
 })
-export class InfoPageComponent implements OnInit {
+export class InfoPageComponent extends GenericPageComponent {
 
   items = [
     {
@@ -38,11 +39,5 @@ export class InfoPageComponent implements OnInit {
       ]
     }
   ];
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
 
 }
