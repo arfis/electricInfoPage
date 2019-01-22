@@ -7,8 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ElectricInfoPage';
-  name = 'Elektrikari';
+  title = 'ACS elektrik s.r.o';
+  name = 'ACS elektrik s.r.o';
 
   items = [
     {label: 'header.services', link: 'services'},
