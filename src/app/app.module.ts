@@ -47,10 +47,10 @@ import { GenericPageComponent } from './pages/generic-page/generic-page.componen
   ],
   providers: []
 })
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}
 
 export class AppModule {
 }
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
