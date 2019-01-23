@@ -13,7 +13,6 @@ import { HeaderPanelComponent } from './header/header-panel/header-panel.compone
 import { FooterComponent } from './footer/footer.component';
 import { InfoItemComponent } from './info-item/info-item.component';
 import { OverflowButtonComponent } from './overflow-button/overflow-button.component';
-import { HttpLoaderFactory, SharedModule } from './shared/shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgtUniversalModule } from '@ng-toolkit/universal';
@@ -48,6 +47,10 @@ import { GenericPageComponent } from './pages/generic-page/generic-page.componen
   ],
   providers: []
 })
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
+
 export class AppModule {
 }
 

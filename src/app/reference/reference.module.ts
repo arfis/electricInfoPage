@@ -6,9 +6,9 @@ import { ImageDetailComponent } from '../image-detail/image-detail.component';
 import { RefComponent } from '../ref/ref.component';
 import { ImageComponent } from '../image/image.component';
 import { ReferenceRoutingModule } from './reference-routing.module';
-import { HttpLoaderFactory, SharedModule } from '../shared/shared/shared.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   imports: [
@@ -31,3 +31,7 @@ import { HttpClient } from '@angular/common/http';
   ]
 })
 export class ReferenceModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
