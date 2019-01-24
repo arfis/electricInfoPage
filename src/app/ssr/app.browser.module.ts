@@ -8,7 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
   imports: [
     BrowserModule.withServerTransition({appId: 'ms-root'}),
-    AppModule,
+    AppModule
   ]
 })
 export class AppBrowserModule {
