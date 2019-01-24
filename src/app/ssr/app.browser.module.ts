@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
   bootstrap: [AppComponent],
 
   imports: [
-    BrowserModule.withServerTransition({appId: 'ms-root'}),
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppModule
   ]
 })

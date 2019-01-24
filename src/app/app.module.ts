@@ -15,10 +15,10 @@ import { InfoItemComponent } from './info-item/info-item.component';
 import { OverflowButtonComponent } from './overflow-button/overflow-button.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { GenericPageComponent } from './pages/generic-page/generic-page.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,6 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     CommonModule,
-    NgtUniversalModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
@@ -45,8 +44,7 @@ import { environment } from '../environments/environment';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    }),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    })
   ],
   providers: []
 })
