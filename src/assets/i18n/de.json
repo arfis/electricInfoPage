@@ -2,9 +2,9 @@
   "title": "Liebe Gäste, herzlich willkommen auf der Website von ACS Elektrik s.r.o.",
   "main": "Wir möchten Ihnen unser Unternehmen vorstellen. ACS Elektrik s.r.o. wurde 2017 von Spezialisten gegründet. Wir verfügen über eine langjährige Erfahrung in unserem Bereich. Unsere Firma beschäftigt sich mit der industriellen Automatisierung, sowie mit Wohn- und Büroinstallationen in der Slowakei sowie im Ausland.",
   "header": {
-    "services": "Sluzby",
+    "services": "Leistunge",
     "about": "Kontakt",
-    "refs": "Referencie"
+    "refs": "Referenzen"
   },
   "page": {
     "contactUs": "Kontaktujte nas:"
@@ -15,24 +15,23 @@
     "photos": "Galéria"
   },
   "services": {
-    "ourServices": "Služby",
-    "service1": "kompletné pripojenie káblov podľa projektovej dokumentácie",
-    "service2": "montáž káblových trás",
-    "service3": "kompletné pripojenie rozvodných skríň, riadiacich pultov...",
+    "ourServices": "Leistunge",
+    "service1": "komplette Kabelverbindung gemäß Konstruktionsdokumentation",
+    "service2": "Installation von Kabeltrassen",
+    "service3": "kompletter Anschluss von Schaltschränken, Bedienfeldern...",
     "electroInstalation" : {
-      "title": "Elektroinštalácia",
-      "item1": "elektroinštalačné práce pri domovej výstavbe",
-      "item2": "elektroinštalačné práce pri bytovej výstavbe",
-      "item3": "elektroinštalačné práce v halách",
-      "item4": "elektroinštalácie, silnoprúd, slaboprúd",
-      "item5": "prerábky a rekonštrukcie bytov a domov"
+      "title": "Elektrische installation",
+      "item1": "Elektroinstallationsarbeiten zu Hause",
+      "item2": "Elektroinstallationsarbeiten für den Wohnungsbau",
+      "item3": "Elektroinstallationsarbeiten in Hallen",
+      "item4": "elektrische Verdrahtung, Stromversorgung, schwacher Strom",
+      "item5": "Wiederaufbau von Wohnungen und Häusern"
     },
     "automation" : {
-      "title": "Automatizácia",
-      "item1" : "výrobné linky",
-      "item2": "automatizačné zariadenia",
-      "item3": "dopravníky",
-      "item4": "konštrukcia a montáž strojov"
+      "title": "Automatisierung",
+      "item1" : "Produktionslinien",
+      "item2": "Automatisierungsgeräte",
+      "item3": "Maschinenbau"
     }
   }
 }

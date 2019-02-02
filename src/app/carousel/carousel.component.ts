@@ -16,12 +16,12 @@ export class CarouselComponent implements OnInit {
   imageList = {};
   images = [{
     image: 'assets/img/worker.jpg',
-    title: 'Elektroinstalacia',
-    text: 'Bytova elektroinstalacia'
+    title: 'carousel.electroinstalation.title',
+    text: 'carousel.electroinstalation.text'
   }, {
     image: 'assets/img/intro.jpg',
-    title: 'Automatizacia',
-    text: 'Elektricka automatizacia vo firmach'
+    title: 'carousel.automation.title',
+    text: 'carousel.automation.text'
   }];
 
   constructor(config: NgbCarouselConfig,

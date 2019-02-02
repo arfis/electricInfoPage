@@ -34,8 +34,7 @@ export class InfoPageComponent extends GenericPageComponent {
       items: [
         'services.automation.item1',
         'services.automation.item2',
-        'services.automation.item3',
-        'services.automation.item4'
+        'services.automation.item3'
       ]
     }
   ];

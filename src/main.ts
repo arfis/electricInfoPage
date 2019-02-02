@@ -1,4 +1,3 @@
-import { AppBrowserModule } from './app/ssr/app.browser.module';
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
@@ -9,6 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppBrowserModule)
-  .catch(err => console.error(err));
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
 

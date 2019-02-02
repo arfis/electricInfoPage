@@ -35,8 +35,17 @@
       "title": "Automatizácia",
       "item1" : "výrobné linky",
       "item2": "automatizačné zariadenia",
-      "item3": "dopravníky",
-      "item4": "konštrukcia a montáž strojov"
+      "item3": "dopravníky"
+    }
+  },
+  "carousel" : {
+    "automation" : {
+      "text": "elektroinstalacia v roznych objektoch",
+      "title": "Automatizácia v priemysle"
+    },
+    "electroinstalation": {
+      "text": "Bytová elektroinštalácia",
+      "title": "Elektroinštalácia"
     }
   }
 }

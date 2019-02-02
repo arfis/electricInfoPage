@@ -34,6 +34,7 @@ import { BrowserModule } from '@angular/platform-browser';
     GenericPageComponent
   ],
   imports: [
+    BrowserModule,
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
@@ -46,7 +47,8 @@ import { BrowserModule } from '@angular/platform-browser';
       }
     })
   ],
-  providers: []
+  providers: [],
+  bootstrap: [AppComponent]
 })
 
 export class AppModule {
